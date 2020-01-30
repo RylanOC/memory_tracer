@@ -1,5 +1,5 @@
 // g++ -g buggy.cpp -o buggy
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 
 #include <iostream>
 #define MAX_BOOKS 32
@@ -70,6 +70,7 @@ int main() {
       }
 
       default:
+        std::cout << "bye!" << std::endl;
         exit(0);
     }
   }
