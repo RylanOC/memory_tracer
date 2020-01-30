@@ -71,6 +71,7 @@ int main() {
 
       default:
         std::cout << "bye!" << std::endl;
+        system("date");
         exit(0);
     }
   }
