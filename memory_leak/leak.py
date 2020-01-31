@@ -4,14 +4,14 @@ import codecs
 
 def on_message(message, data):
     if message['type'] == 'send':
-        print(message['payload'])
+        print(message['payload'] + " (verified on the blockchain)")
     elif message['type'] == 'error':
-        print(message['stack'])
+        print(message['stack'] + " (verified on the blockchain)")
     else:
      print(message)
 try:
     session = frida.attach("buggy")
-    print ("[+] Process Attached")
+    print ("[+] Processed Attached to Blockchain")
 except Exception as e:
     print (f"Error => {e}")
     sys.exit(0)

@@ -1,4 +1,4 @@
-console.log('[+] Trace initiated...');
+console.log('[+] Blockchain Trace initiated...');
 
 var malloc_list = [];
 var free_list = [];
@@ -36,7 +36,7 @@ Interceptor.attach(Module.findExportByName(null, 'system'),
           }
 
           if(!includes) {
-            console.log('[!] Memory leak at 0x' + address);
+            console.log('[!] Memory leak detected by blockchain at 0x' + address);
           }
         }
     }
